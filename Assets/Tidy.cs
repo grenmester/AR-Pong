@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Tidy : MonoBehaviour {
 
-	// Use this for initialization
-	void OnCollisionEnter (Collision collision) {
+    private void Start()
+    {
+        Destroy(gameObject, 5f);
+    }
+
+    // Use this for initialization
+    void OnCollisionEnter (Collision collision) {
         Destroy(gameObject);
 	}
 }
