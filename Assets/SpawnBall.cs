@@ -25,7 +25,7 @@ public class SpawnBall : MonoBehaviour
         pos += transform.forward * horiz_offset;
         // Quaternion rot = transform.rotation;
         Quaternion rot = Quaternion.identity;
-        rot.x = -1 * theta;
+        rot.x += -1 * theta;
         Rigidbody shot = Instantiate(projectile, pos, rot) as Rigidbody;
         shot.AddForce(transform.forward * shotForce);
     }
@@ -63,7 +63,7 @@ public class SpawnBall : MonoBehaviour
 
         transform.Translate(new Vector3(h, v, 0));
 
-        if(Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp("Fire1"))
         {
             SpawnABall();
         }
