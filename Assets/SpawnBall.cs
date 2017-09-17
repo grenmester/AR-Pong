@@ -8,11 +8,11 @@ public class SpawnBall : MonoBehaviour
 {
 
     public Rigidbody projectile;
-    public float z_offset;
+    public float horiz_offset;
     public float y_offset;
     public float theta;
-    public float shotForce = 1000f;
-    public float moveSpeed = 10f;
+    public float shotForce;
+    public float moveSpeed;
     private GestureRecognizer recognizer;
     KeywordRecognizer keywordRecognizer = null;
     Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
@@ -21,8 +21,8 @@ public class SpawnBall : MonoBehaviour
     {
         print("Spawning a ball");
         Vector3 pos = transform.position;
-        pos.z += z_offset;
         pos.y += y_offset;
+        pos += transform.forward * horiz_offset;
         // Quaternion rot = transform.rotation;
         Quaternion rot = Quaternion.identity;
         rot.x = -1 * theta;
