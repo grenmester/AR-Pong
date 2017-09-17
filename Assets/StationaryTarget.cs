@@ -19,5 +19,11 @@ public class StationaryTarget : MonoBehaviour {
     void OnCollisionEnter (Collision collision)
     {
         scoreManager.updateScore();
+        AudioSource sound = GetComponent<AudioSource>();
+        sound.Play();
+        Vector3 pos = transform.position;
+        pos.x += Random.Range(-3, 3);
+        pos.y += Random.Range(-3, 3);
+        transform.position = pos;
     }
 }
