@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
     public static int score;        // The player's score.
 
 
-    Text text;                      // Reference to the Text component.
+    public Text text;                      // Reference to the Text component.
 
 
     //void Awake()
@@ -15,7 +15,7 @@ public class ScoreManager : MonoBehaviour
     {
         // Set up the reference.
         //text = gameObject.GetComponent<Text>();
-        ////text.text = "";
+        text.text = "";
         // Reset the score.
         score = 0;
     }
@@ -24,7 +24,7 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         // Set the displayed text to be the word "Score" followed by the score value.
-        //text.text = "Score: " + (score / 4);
+        text.text = "Score: " + score;
     }
 
     public void updateScore()

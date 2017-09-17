@@ -7,7 +7,7 @@
 # Default behavior is to never overwrite files
 Collision Test.sln: modified
 Collision Test\App.cs: modified
-Collision Test\Collision Test.csproj: modified
+Collision Test\Collision Test.csproj: B3D9224E2A20AE951EB250BF66257551
 Collision Test\Collision Test.csproj.user: modified
 Collision Test\Package.appxmanifest: 25D48E797FC064AF86E2F4499FCD4D27
 Collision Test\project.json: 1D02BC64BAC0D041019673A1C4C51737

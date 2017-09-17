@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -336,10 +336,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 54668977028595878, guid: f88179fa35b170d49980a2c62cb46924,
     type: 2}
-  horiz_offset: 2
+  horiz_offset: 3
   y_offset: 0
   theta: 0
-  shotForce: 800
+  shotForce: 200
   moveSpeed: 10
 --- !u!1 &556206921
 GameObject:
@@ -607,7 +607,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4705978331781964, guid: 187ebff0b9ac5d84593906901a59dac2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.47
+      value: -1.97
       objectReference: {fileID: 0}
     - target: {fileID: 4705978331781964, guid: 187ebff0b9ac5d84593906901a59dac2, type: 2}
       propertyPath: m_LocalPosition.z
