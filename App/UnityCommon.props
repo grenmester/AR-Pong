@@ -1,8 +1,8 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <UnityWSASolutionName>Collision Test</UnityWSASolutionName>
-        <UnityWSASolutionDir>C:\Users\cole\git\Paintwall-AR\App\</UnityWSASolutionDir>
-        <UnityProjectDir>C:\Users\cole\git\Paintwall-AR\</UnityProjectDir>
+        <UnityWSASolutionDir>C:\Users\hmzhk\Documents\GitHub\Paintwall-AR\App\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\hmzhk\Documents\GitHub\Paintwall-AR\</UnityProjectDir>
         <UnityWSAPlayerDir>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
         <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
     </PropertyGroup>

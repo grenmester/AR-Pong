@@ -25,20 +25,23 @@ public class SpawnBall : MonoBehaviour
         pos.y += y_offset;
         // Quaternion rot = transform.rotation;
         Quaternion rot = Quaternion.identity;
-        rot.x -= theta;
+        rot.x = -1 * theta;
         Rigidbody shot = Instantiate(projectile, pos, rot) as Rigidbody;
         shot.AddForce(transform.forward * shotForce);
+    }
+
+    private void Awake()
+    {
+        // Gesture recognition
+        recognizer = new GestureRecognizer();
+        recognizer.SetRecognizableGestures(GestureSettings.Tap);
+        recognizer.TappedEvent += (Source, tapCount, ray) => { SpawnABall(); };
+        recognizer.StartCapturingGestures();
     }
 
     // Use this for initialization
     void Start()
     {
-        // Gesture recognition
-        recognizer = new GestureRecognizer();
-        recognizer.SetRecognizableGestures(GestureSettings.Tap);
-        recognizer.TappedEvent += (Source, tapCount, ray) => { SpawnABall();};
-        recognizer.StartCapturingGestures();
-
         // Speech recognition
         keywords.Add("Spawn ball", () =>
         {
@@ -59,6 +62,11 @@ public class SpawnBall : MonoBehaviour
         float v = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
 
         transform.Translate(new Vector3(h, v, 0));
+
+        if(Input.GetButtonUp("Fire1"))
+        {
+            SpawnABall();
+        }
     }
 
     private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
