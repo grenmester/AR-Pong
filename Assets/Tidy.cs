@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Tidy : MonoBehaviour {
 
+    public float timeAlive;
+    public string destroyTag;
     private void Start()
     {
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, timeAlive);
     }
 
-    // Use this for initialization
     void OnCollisionEnter (Collision collision) {
-        Destroy(gameObject);
-	}
+        if(collision.collider.tag == destroyTag)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
