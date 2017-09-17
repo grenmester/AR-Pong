@@ -5,10 +5,10 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-Collision Test.sln: B22A6B8B4C2178591E8083A3733F7386
+Collision Test.sln: modified
 Collision Test\App.cs: modified
-Collision Test\Collision Test.csproj: B1765DC1A56DAF59F4C642050785BA63
-Collision Test\Collision Test.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
+Collision Test\Collision Test.csproj: 9E3E9DCE7DBECCCEF3D079D98143127E
+Collision Test\Collision Test.csproj.user: modified
 Collision Test\Package.appxmanifest: 25D48E797FC064AF86E2F4499FCD4D27
 Collision Test\project.json: 1D02BC64BAC0D041019673A1C4C51737
 Collision Test\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
